@@ -1,0 +1,1 @@
+0 1 * * * /venv/bin/resource-catalogue-metrics metrics analyze --url $RESOURCE_CATALOGUE_METRICS_CATALOGUE_URL
