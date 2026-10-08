@@ -7,7 +7,7 @@ EOEPCA Resource Catalogue metrics service.
 
 ## Workflow
 
-- runs on a schedule (per `resource-catalogue-metrics-management/dockekr/resource-catalogue-metrics-management.cron`) to analyze a resource catalogue instance (as defined in `$RESOURCE_CATALOGUE_METRICS_CATALOGUE_URL`)
+- runs on a schedule (per `resource-catalogue-metrics-management/docker/resource-catalogue-metrics-management.cron`) to analyze a resource catalogue instance (as defined in `$RESOURCE_CATALOGUE_METRICS_CATALOGUE_URL`)
 - queries catalogue to derive metrics
 - publishes to broker service (MQTT)
 - sends metrics to a Prometheus collector
