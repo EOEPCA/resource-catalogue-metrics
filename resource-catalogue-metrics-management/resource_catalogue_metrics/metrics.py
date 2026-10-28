@@ -73,7 +73,7 @@ class MetricsAnalyzer:
         url_ = f'{self.url}/collections'
         response = requests.get(url_).json()
         collections = response['collections']
-        self._publish_metric('resource-catalogue-metrics/metrics/resource_catalogue_collections_total',  # noqa
+        self._publish_metric('resource-catalogue-metrics/metrics/collections_total',  # noqa
                              [self.url], len(collections))
 
     def _publish_metric(self, topic: str, labels: list,
