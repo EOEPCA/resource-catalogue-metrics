@@ -25,6 +25,14 @@ services:
       - 1883:1883  # default
       - 1884:1884  # websockets
 
+  resource-catalogue-metrics-metrics-collector:
+    ports:
+      - 8006:8006
+
   resource-catalogue-metrics-grafana:
     ports:
       - 3000:3000
+
+  resource-catalogue-metrics-prometheus:
+    ports:
+      - 9090:9090
