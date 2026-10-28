@@ -50,6 +50,7 @@ services:
     networks:
       - resource-catalogue-metrics-net
     volumes:
+      - resource-catalogue-metrics-grafana-data:/var/lib/grafana
       - ./resource-catalogue-metrics-monitoring/grafana/datasource.yml:/etc/grafana/provisioning/datasources/grafana-datasource.yml
     environment:
       - GF_SECURITY_ADMIN_USER=${GRAFANA_ADMIN_USER:-admin}
@@ -114,6 +115,7 @@ services:
 
 volumes:
   resource-catalogue-metrics-management-data:
+  resource-catalogue-metrics-grafana-data:
 
 networks:
   resource-catalogue-metrics-net:
